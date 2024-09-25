@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa"; // Importing icons
 import HeaderContact from "./HeaderContact";
 import HeaderNav from "./HeaderNav";
 import HeaderTitle from "./HeaderTitle";
-import Sidebar from "./Sidebar"; // Importing Sidebar component
+import Sidebar from "./Sidebar/Sidebar"; // Importing Sidebar component
 
 const Header = ({ title, navLinks, contact, styles }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

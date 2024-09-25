@@ -22,7 +22,7 @@ const Hero = ({
 
   return (
     <section className={`${styles.backgroundColor} ${styles.textColor}`}>
-      <div className="hero-container">
+      <div className="hero-container ">
         {/* Hero Title Section */}
         <HeroTitle
           title={title}
@@ -32,7 +32,7 @@ const Hero = ({
         />
 
         {/* Hero Cards Section */}
-        <div className="hero-card-container grid grid-cols-2 gap-4">
+        <div className="hero-card-container  ">
           {cards.map((card, index) => (
             <HeroCard
               key={index}
@@ -43,6 +43,7 @@ const Hero = ({
             />
           ))}
           {/* Render extra cards only if showExtraCards is true */}
+
           {showExtraCards &&
             extraCards.map((card, index) => (
               <HeroCard
@@ -57,11 +58,13 @@ const Hero = ({
 
         {/* Hero Button Section */}
         {!showExtraCards && (
-          <HeroButton
-            buttonLabel={buttonLabel}
-            styles={styles}
-            onClick={handleButtonClick}
-          />
+          <div className="mt-6 flex justify-center">
+            <HeroButton
+              buttonLabel={buttonLabel}
+              styles={styles}
+              onClick={handleButtonClick}
+            />
+          </div>
         )}
       </div>
     </section>

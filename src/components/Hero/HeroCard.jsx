@@ -1,21 +1,19 @@
 import React from "react";
-import { FaUser, FaUsers } from "react-icons/fa";
-
-// Icons map for dynamic rendering
-const icons = {
-  FaUser: <FaUser className="hero-card-icon" />,
-  FaUsers: <FaUsers className="hero-card-icon" />,
-};
 
 const HeroCard = ({ type, icon, border, styles }) => {
   return (
     <div
       className={`hero-card ${border ? styles.borderColor : ""} ${
         styles.cardBackgroundColor
-      } ${styles.cardTextColor} ${styles.cardHoverShadow}`}
+      } ${styles.cardTextColor} ${
+        styles.cardHoverShadow
+      } rounded-lg p-4 text-center`}
     >
-      {icons[icon]} {/* Render the icon dynamically based on props */}
-      <span className="hero-card-title">{type}</span>
+      {/* Render the icon dynamically */}
+      <div className="mb-2">{icon}</div>
+      <span className="hero-card-title mt-2 block text-lg font-semibold">
+        {type}
+      </span>
     </div>
   );
 };

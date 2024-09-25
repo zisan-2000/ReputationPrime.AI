@@ -1,10 +1,14 @@
 import {
   FaAward,
+  FaBuilding,
   FaBusinessTime,
+  FaCity,
   FaHandsHelping,
   FaNewspaper,
   FaRegChartBar,
   FaRegLightbulb,
+  FaUser,
+  FaUsers,
   FaYahoo,
 } from "react-icons/fa";
 
@@ -15,11 +19,46 @@ export const headerData = {
     part2: "DASH",
   },
   navLinks: [
-    { name: "THE PROCESS", url: "#" },
-    { name: "BUSINESS", url: "#" },
-    { name: "INDIVIDUAL", url: "#" },
-    { name: "WHO WE SERVE", url: "#" },
-    { name: "ABOUT US", url: "#" },
+    {
+      name: "THE PROCESS",
+      url: "#",
+      dropdownItems: [
+        { name: "Process Overview", url: "#" },
+        { name: "Step-by-Step Guide", url: "#" },
+      ],
+    },
+    {
+      name: "BUSINESS",
+      url: "#",
+      dropdownItems: [
+        { name: "For Corporates", url: "#" },
+        { name: "Small Business", url: "#" },
+      ],
+    },
+    {
+      name: "INDIVIDUAL",
+      url: "#",
+      dropdownItems: [
+        { name: "Personal Branding", url: "#" },
+        { name: "Career Management", url: "#" },
+      ],
+    },
+    {
+      name: "WHO WE SERVE",
+      url: "#",
+      dropdownItems: [
+        { name: "Client Stories", url: "#" },
+        { name: "Industries", url: "#" },
+      ],
+    },
+    {
+      name: "ABOUT US",
+      url: "#",
+      dropdownItems: [
+        { name: "Our Team", url: "#" },
+        { name: "Our Vision", url: "#" },
+      ],
+    },
   ],
   contact: {
     phoneNumber: "01793-874189",
@@ -40,28 +79,28 @@ export const heroData = {
   cards: [
     {
       type: "Individual",
-      icon: "FaUser",
+      icon: <FaUser className="hero-card-icon" />,
       border: true,
     },
     {
       type: "Business",
-      icon: "FaUsers",
+      icon: <FaUsers className="hero-card-icon" />,
       border: true,
     },
   ],
   extraCards: [
     {
       type: "Agency",
-      icon: "FaBuilding",
+      icon: <FaBuilding className="hero-card-icon" />,
       border: true,
     },
     {
       type: "Enterprise",
-      icon: "FaCity",
+      icon: <FaCity className="hero-card-icon" />,
       border: true,
     },
   ],
-  buttonLabel: "Continue",
+  buttonLabel: "View More",
   styles: {
     backgroundColor: "bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900", // Background gradient for the hero section
     textColor: "text-white", // Color for the main text
@@ -460,22 +499,6 @@ export const reviewSectionData = {
         "We had several negative Google Reviews that were clearly not written by real people. Google failed to remove these when we flagged them, but NetReputation did so in a matter of a few days.",
       reply: "Reply from NetReputation",
       replyDate: "September 13",
-    },
-    {
-      rating: 5,
-      name: "Lauren T.",
-      date: "September 10",
-      title: "Great experience with Kayden Koch at NetReputation",
-      content:
-        "Hayden Koch has been a tremendous help with our case. Very professional and follows up weekly. Very happy with their work so far.",
-    },
-    {
-      rating: 5,
-      name: "William Koontz",
-      date: "September 4",
-      title: "I have been working with my dedicated...",
-      content:
-        "I have been working with my dedicated team for over 2 years, and these guys do a fantastic job. We’ve learned a lot from each other and developed a strong strategy to keep my reputation intact.",
     },
   ],
   styles: {

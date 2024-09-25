@@ -66,13 +66,13 @@ body {
   @apply mb-8;
 }
 .hero-card-container {
-  @apply flex space-x-6;
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:flex md:grid-cols-4 md:justify-center;
 }
 .hero-card {
-  @apply flex flex-col items-center space-y-4 rounded-lg bg-white px-8 py-6 text-gray-800 shadow-lg hover:shadow-2xl;
+  @apply flex flex-col items-center space-y-4 rounded-lg bg-white px-12 py-10 text-gray-800 shadow-lg hover:shadow-2xl;
 }
 .hero-card-icon {
-  @apply mb-2 text-5xl text-green-500;
+  @apply mb-2 text-7xl text-green-500;
 }
 .hero-card-title {
   @apply text-2xl font-bold;
