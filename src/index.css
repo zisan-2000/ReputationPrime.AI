@@ -133,7 +133,7 @@ body {
 }
 
 .solution-card {
-  @apply ml-8 flex h-full flex-col items-center justify-between rounded-lg border p-6 text-center shadow-sm transition-shadow duration-300 hover:shadow-lg;
+  @apply ml-3 flex h-full flex-col items-center justify-between rounded-lg border p-6 text-center shadow-sm transition-shadow duration-300 hover:shadow-lg;
   width: 100%;
   max-width: 300px;
 }
